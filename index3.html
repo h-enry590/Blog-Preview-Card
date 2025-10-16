@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <style>
+        body{
+                 box-sizing: border-box;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: 'Arial', sans-serif;
+            height:50px;
+            color: hsl(0, 0%, 100%);
+            background-color: hsl(47, 88%, 63%);
+            height:100vh;
+        }
+    
+    .card{
+        border:1px solid hsl(0, 0%, 7%);
+        border-radius: 1.5em;
+        align-items:flex-start;
+        justify-content: center;
+        background-color: hsl(0, 0%, 100%);
+        color:hsl(0, 0%, 7%);
+        height:80vh;
+        width:400px;
+        box-shadow:8px 12px hsl(0, 0%, 7%);
+    }
+    .bottom{
+        display:flex;
+        align-items: center;
+        flex-direction: row;
+        padding:1rem 0rem 1rem 1rem;
+        gap:10px;
+    }
+     button{
+        border:none;
+        font-weight:700;
+        font-style: bold;
+        font-size: large;
+        color:hsl(0, 0%, 7%);
+        background-color:  hsl(47, 88%, 63%);
+        padding:8px;
+        margin-left: 1rem;
+        border-radius:5px;
+    }
+    h4{
+        color:hsl(0, 0%, 7%);
+        font-size: medium;
+        margin-left:1rem;
+    }
+   
+    p{
+        color:hsl(0, 0%, 42%);
+        font-weight: 200;
+        font-size:larger;
+        line-height: 1.5;
+        margin:0rem 0rem 1rem 1rem;
+    }
+    h3{
+        color:hsl(0, 0%, 7%);
+        font-size:1em;
+        font-style: bold;
+        color:hsl(0, 0%, 7%);
+    }
+    h2{
+        margin:0rem 0rem 1rem 1rem;
+        font-size:30px;
+        cursor:pointer;
+    }
+    h2:hover{
+        color:  hsl(47, 88%, 63%);
+    }
+    .image{
+        width: 380px;
+        height:200px;
+        margin-top:5px;
+        border-radius:2rem;
+        padding:5px 5px 3px 8px;
+    }
+    
+        
+     @media (max-width: 400px) {
+            .card {
+                width: 375px;
+            }
+
+            @media (min-width:1024px) {
+                .card {
+                    width: 1440px;
+                }
+            }
+    
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+    <div>
+    <img  class="image" src="./illustration-article.png" alt="illustration-article">
+    </div>
+        <button>Learning</button>
+        <h4>Published 21 Dec 2023</h4>
+        <h2>HTML & CSS foundations</h2>
+        <p>These languages are the backbone of every <br> website, defining structure, content and <br> presentation.</p>
+    <div class="bottom">
+        <img src="./image-avatar.webp" width="40" height="40" alt="image"> 
+        <h3>Greg Hooper</h3>
+    </div>
+
+    </div>
+</body>
+</html>
